@@ -1,0 +1,76 @@
+.parent{
+    overflow: hidden;
+    width: 550px;
+    margin: 20px auto;
+    /* background-color: green ; */
+}
+.one{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    background-color: #eee;
+    position: relative;
+}
+.two{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-left: 20px;
+    margin-top: 10px;
+    background-color: #eee;
+    position: relative;
+}
+p{
+    position: absolute;
+    width: 210px;
+    height: 15%;
+    background-color: #03a9f4;
+    text-align: center;
+    margin-left: 20px;
+    border-radius:5px ;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-top: 15px;
+}
+span{
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    background-color: #ddd;
+    top: 30%;
+    margin-left: 20px;
+    text-align: center;
+    border-radius: 110px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.one::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: -15px;
+    top: 0;
+    background-color: #03a9f4;
+    /* z-index: auto; */
+  }
+.two::before{
+    content: "or";
+    background-color:#03a9f4 ;
+    height: 20px;
+    width: 20px;
+    color: white;
+    left: -25px;
+    top: 170px;
+    position: absolute;
+    border-radius: 10px;
+    text-align: center;
+    /* z-index: auto; */
+
+}
